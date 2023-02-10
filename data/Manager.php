@@ -6,7 +6,7 @@ class Manager
 
     function sayHello(string $name): void
     {
-        echo "Hi $name, my Name is $this->name" . PHP_EOL;
+        echo "Manager: Hi $name, my Name is $this->name" . PHP_EOL;
     }
 
 }
