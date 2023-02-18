@@ -36,8 +36,13 @@ trait CanRun
     public abstract function run(): void;
 }
 
-class Person {
+trait All
+{
     use SayGoodBye, SayHello, HasName, CanRun;
+}
+
+class Person {
+    use All;
 
     public function run(): void
     {
