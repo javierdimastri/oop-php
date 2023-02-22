@@ -15,3 +15,12 @@ $minusOneMonth->invert = true;
 $dateUpcomingYear->add($minusOneMonth);
 var_dump($dateUpcomingYear);
 
+
+$parseDateTime = DateTime::createFromFormat(
+    "Y-m-d H:i:s", "2023-02-22 00:00:01", new DateTimeZone("Asia/Jakarta")
+);
+var_dump($parseDateTime);
+
+$dateTimeNowToronto = new DateTime();
+$dateTimeNowToronto->setTimezone(new DateTimeZone("America/Toronto"));
+var_dump($dateTimeNowToronto);
