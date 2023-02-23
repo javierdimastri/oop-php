@@ -8,5 +8,5 @@ function validate(LoginRequest $request)
     if (trim($request->userName) === "" || trim($request->password) === ""){
         throw new Exception("username or password is empty");
     }
-    echo "Success Login";
+    echo "Success Login" . PHP_EOL;
 }
